@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft = "true"
+        android:id="@+id/textviewUserInfo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textviewUserInfo"
+        android:id="@+id/linearButtons">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNextQuestion"
+            android:onClick="fnButtonNextQuestion"
+            android:src="@drawable/ic_nextquestion"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"/>
+        <ImageButton
+            android:id="@+id/buttonHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fnButtonHelp"
+            android:src="@drawable/ic_help"/>
+        <ImageButton
+            android:id="@+id/buttonPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fnButtonPreferences"
+            android:src="@drawable/ic_preferences"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/linearButtons"
+        android:id="@+id/textviewStatus" />
+
+    <TextView
+        android:text="@string/stringWelcomingQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/textviewStatus"
+        android:id="@+id/textviewQuestion"
+        android:textSize="24sp"
+        android:textColor="#4f4f4f"
+        android:padding="4dp"
+        android:background="@drawable/viewborder" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/textviewQuestion"
+        android:paddingTop="4dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/framelayoutMain" >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listviewMatches"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearAnswerAndExplanation">
+            <TextView
+                android:id="@+id/textviewAnswer"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textviewExplanation"
+                android:text="@string/stringWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

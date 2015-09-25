@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Выбираем перевод!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stringWelcomingQuestion">Translate me!</string>
+    <string name="stringRating">Рейтинг</string>
+    <string name="stringStart">Старт</string>
+    <string name="stringNextQuestion">Продолжить</string>
+    <string name="stringPreferences">Опции</string>
+    <string name="stringResetRating">Сбросить рейтинг</string>
+    <string name="stringSave">Ok</string>
+    <string name="stringCancel">Отмена</string>
+    <string name="stringEmail">Email</string>
+    <string name="stringPassword">Пароль</string>
+    <string name="stringStatusLoadingNext">Загрузка. Ждите...</string>
+    <string name="stringStatusLoadedNext"></string>
+    <string name="stringStatusNotLoadedNext">Ошибка. Попробуйте еще раз...</string>
+    <string name="stringStatusLoggingIn">Авторизация...</string>
+    <string name="stringStatusLoginFailed">Ошибка авторизации.</string>
+    <string name="stringCorrect">Верно</string>
+    <string name="stringIncorrect">Неверно</string>
+    <string name="stringHelp">Помощь</string>
+    <string name="stringWelcome">Из предложенных вариантов перевода английского слова вы должны выбрать правильный...</string>
+    <string name="stringHelpNextQuestion">Нажмите эту кнопку, чтобы загрузить очередное задание - английское слово и варианты его перевода.</string>
+    <string name="stringHelpPreferences"> Нажмите эту кнопку, чтобы попасть в раздел \"Опции\". Здесь вы сможете обнулить статистику и рейтинг.</string>
+
+</resources>
